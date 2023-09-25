@@ -1,3 +1,4 @@
+import 'package:clean_architecture/core/theme/color_schemes.dart';
 import 'package:clean_architecture/test.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          colorScheme: lightColorScheme,
+          useMaterial3: true,
+        ),
+        darkTheme: ThemeData(
+          colorScheme: darkColorScheme,
           useMaterial3: true,
         ),
         home: const Test());
