@@ -1,5 +1,5 @@
 import 'package:clean_architecture/core/theme/color_schemes.dart';
-import 'package:clean_architecture/test.dart';
+import 'package:clean_architecture/features/todo_app/presentation/screens/todo_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Flutter todoAPP',
         theme: ThemeData(
           colorScheme: lightColorScheme,
           useMaterial3: true,
@@ -22,6 +22,6 @@ class MyApp extends StatelessWidget {
           colorScheme: darkColorScheme,
           useMaterial3: true,
         ),
-        home: const Test());
+        home: const TodoScreen());
   }
 }
